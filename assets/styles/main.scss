@@ -1,0 +1,89 @@
+@import './variables';
+
+@font-face {
+  font-family: $FilsonSoft;
+  src: url('~/assets/fonts/Filson/FilsonSoft-Black.woff2');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: $FilsonSoft;
+  src: url('~/assets/fonts/Filson/FilsonSoft-Bold.woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: $FilsonSoft;
+  src: url('~/assets/fonts/Filson/FilsonSoft-Medium.woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: $FilsonSoft;
+  src: url('~/assets/fonts/Filson/FilsonSoft-Regular.woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: $Inter;
+  src: url('~/assets/fonts/Inter/Inter-SemiBold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: $Inter;
+  src: url('~/assets/fonts/Inter/Inter-Regular.ttf');
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $FilsonSoft, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  & > svg {
+    width: 450px;
+    margin: 0 auto;
+  }
+}

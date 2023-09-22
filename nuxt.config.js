@@ -72,7 +72,7 @@ export default {
   css: ['~/assets/styles/main.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{ src: '~/plugins/vue-kinesis.js', mode: 'client' }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: [{ path: '~/components' }],
@@ -89,6 +89,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    'cookie-universal-nuxt',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
